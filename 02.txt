@@ -1,0 +1,59 @@
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ git add .
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ git commit -m 'changed app.js'
+[master f2eb2f3] changed app.js
+ 1 file changed, 1 insertion(+)
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ ^C
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ clear
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ touch .gitignore
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ touch log.txt
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ git add .
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   01.txt
+
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ git add .
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   01.txt
+        new file:   dir1/app1.js.txt
+
+
+EliteBook@EliteBook MINGW64 ~/desktop/myproject (master)
+$
